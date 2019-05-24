@@ -1,0 +1,132 @@
+body{
+	font-family: "Source code pro", Calibri, serif;
+	margin: 0px;
+	padding: 0px;
+	background-image:url(images/wallpaper1.png);
+	background-attachment: fixed;
+}
+
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+.corps{
+	background-color: white;
+	width: 75%;
+	height: 800px;
+	position: relative;
+	left: 12.5%;
+	top: 50px;
+	bottom: 50px;
+	border-radius: 10px;
+	padding: 10px;
+
+}
+
+.submenu{
+	display: none;
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+
+.police-pokemon{
+	width: 7.5%;
+	height: 5%;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.menu-index:hover{
+	border-top: 5px solid rgb(211, 84, 0);
+	background-color: rgba(211, 84, 0, 0.15);
+}
+
+.menu-index .submenu{
+	background-color: rgb(211, 84, 0);
+}
+
+.menu-robot:hover{
+	border-top: 5px solid rgb(230, 126, 34);
+	background-color: rgba(230, 126, 34, 0.15);
+}
+
+.menu-robot .submenu{
+	background-color: rgb(230, 126, 34);
+}
+
+.menu-concept:hover{
+	border-top: 5px solid rgb(243, 156, 18);
+	background-color: rgba(243, 156, 18, 0.15);
+}
+
+.menu-concept .submenu{
+	background-color: rgb(243, 156, 18);
+}
+
+.menu-equipe:hover{
+	border-top: 5px solid rgb(241, 196, 15);
+	background-color: rgba(241, 196, 15, 0.15);
+}
+
+.menu-equipe .submenu{
+	background-color: rgb(241, 196, 15);
+}
